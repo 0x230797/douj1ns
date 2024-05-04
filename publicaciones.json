@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Título de la publicación 1",
+        "imagen": "imagen1.jpg",
+        "generos": ["Ciencia ficción", "Aventura"],
+        "contenido": "Contenido de la publicación 1..."
+    },
+    {
+        "titulo": "Título de la publicación 2",
+        "imagen": "imagen2.jpg",
+        "generos": ["Fantasía", "Misterio"],
+        "contenido": "Contenido de la publicación 2..."
+    },
+    {
+        "titulo": "Título de la publicación 3",
+        "imagen": "imagen3.jpg",
+        "generos": ["Romance", "Drama"],
+        "contenido": "Contenido de la publicación 3..."
+    }
+]

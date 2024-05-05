@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douj1ns</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1>Douj1ns</h1>
+    </section>
+    <input type="text" id="searchInput" placeholder="Buscar...">
+    <select id="genreFilter">
+        <option value="">Filtrar por género</option>
+    </select>
+    <ul id="results"></ul>
+
+    <!-- Paginación -->
+    <div id="pagination">
+        <button id="prevPage">&larr; Anterior</button>
+        <button id="nextPage">Siguiente &rarr;</button>
+    </div>
+
+    <!-- Modal de detalles de publicación -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div id="publicationDetail"></div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+<script src="read.js"></script>
+</body>
+</html>

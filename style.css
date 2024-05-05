@@ -1,0 +1,178 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 1em;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    margin-bottom: 0.5em;
+    overflow: hidden;
+    background: linear-gradient(90deg, #222, #fff, #222);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+/* Formulario */
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+}
+
+/* Resultados */
+#results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#results li {
+    width: calc(50% - 20px);
+    margin: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#results li h2,
+#results li p {
+    margin: 10px;
+}
+
+#results li img {
+    width: 100%;
+    display: block;
+}
+
+/* Botones */
+.btn,
+#pagination button {
+    background: #444; /* Cambiado de #222 a #444 */
+    border: none;
+    color: #fff;
+    padding: 10px 20px; /* Reducido el padding */
+    margin: 10px; /* Ajustado el margen para coincidir con las publicaciones */
+    border-radius: 5px; /* Ajustado el radio de borde */
+    cursor: pointer; /* Agregado cursor: pointer */
+    width: calc(100% - 20px); /* Ajustado el ancho para que coincida con las publicaciones */
+}
+
+.btn:hover,
+#pagination button:hover {
+    background: #666; /* Cambiado de #222 a #666 en hover */
+}
+
+#pagination {
+    display: flex; /* Cambiado a flex para alinear los botones de paginación */
+    justify-content: center; /* Alineación horizontal */
+    align-items: center; /* Alineación vertical */
+}
+
+/* Añadido un espacio a los botones de paginación */
+#pagination button {
+    margin: 0 5px; 
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    /*left: 0;*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    max-width: 80%;
+    color: #fff;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+}
+
+.modal-content p {
+    margin: 1em 0;
+}
+
+.modal-content p strong {
+    background: #222;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
